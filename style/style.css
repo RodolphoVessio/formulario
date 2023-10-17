@@ -1,0 +1,209 @@
+:root {
+    --cor-de-fundo: #FD8A8A;
+    --cor-do-botao: #A8D1D1;
+    --font-do-texto: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-do-texto);
+}
+
+fieldset {
+    border: 0;
+}
+
+input,
+select,
+textarea {
+    border-radius: 5px;
+    border: none;
+}
+
+#titulo {
+    text-align: center;
+    padding-top: 0rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(75, 77, 192);
+}
+
+#subtitulo {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.campo__nome {
+    display: flex;
+    gap: 1rem;
+    margin-left: 26rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#nome {
+    margin-left: 0.5rem
+}
+
+#sobrenome {
+    margin-left: 0.2rem;
+}
+
+.email__celular {
+    display: flex;
+    gap: 2.3rem;
+    margin-left: 26rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#email {
+    margin-left: 0.4rem
+}
+
+#celular {
+    margin-left: 1rem;
+}
+
+.pergunta__idioma {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.conteudo__idioma__lista {
+    display: flex;
+    margin-left: 23.2rem;
+    list-style: none;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.conteudo__nivel__fluencia {
+    margin-left: 25.7rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.pergunta__idioma__titulo {
+    margin-left: 25.6rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.perguntas {
+    padding-top: 0px;
+}
+
+
+
+.pergunta__conteudo__lista {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    margin-left: 15%;
+    margin-right: 10%;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.pergunta__campo__input {
+    margin-top: 0px;
+    padding-top: opx;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.campo__input {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+textarea {
+    padding: 2rem 5rem;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+button {
+    background-color: rgb(75, 77, 192);
+}
+
+@media (max-width: 854px) {
+
+    form,
+    fieldset {
+        flex-direction: column;
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .campo__nome {
+        margin-left: 2rem;
+    }
+
+    #nome {
+        margin-left:2.6rem;
+    }
+
+    .email__celular{
+        margin-left: 2rem;
+        gap:1rem;
+    }
+
+    #email {
+        margin-left: 2.6rem
+    }
+
+    #celular {
+        margin-left: 2.2rem;
+    }
+
+    .conteudo__idioma__lista {
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        list-style: none;
+    }
+
+    .conteudo__nivel__fluencia {
+        margin-left: 0.6rem;
+        align-items: center;
+    }
+
+    .perguntas {
+        flex-direction: column;
+        display: block;
+        margin-left: -1rem;
+        margin-right: 0rem;
+    }
+
+    .pergunta__idioma__titulo {
+        margin-left: 1.6rem;
+        text-align: 0px;
+    }
+
+    .pergunta__conteudo__lista {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    textarea {
+        padding: 10px 10px 10px 10px;
+    }
+}

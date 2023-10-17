@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Formulario de idiomas</title>
+</head>
+
+<body>
+    <h1 id="titulo">Cadastro de alunos</h1>
+
+    <h2 id="subtitulo">Insira as informações</h2>
+
+    <form class="conteudo">
+
+        <fieldset class="campo__nome">
+            <div class="nome__sobrenome">
+                <lebel for="nome"><strong>Nome</strong></lebel>
+                <input type="text" name="nome" id="nome" requirid>
+            </div>
+
+            <div>
+                <lebel for="sobrenome"><strong>Sobrenome</strong></lebel>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="email__celular">
+            <div class="email">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" nome="email" id="email" required>
+            </div>
+
+            <div class="celular">
+                <label for="celular"><strong>Celular</strong></label>
+                <input type="celular" nome="celular" id="celular">
+            </div>
+        </fieldset>
+
+        <fieldset class="pergunta__idioma">
+            <div class="conteudo__idioma">
+
+                <ul class="conteudo__idioma__lista">
+                    
+                    <lebel><strong>Qual idioma você está aprendendo:</strong></lebel>
+                    <li>
+                        <lebel>
+                            <input type="radio" name="devweb" checked> Inglês
+                        </lebel>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" name="devweb" value="espanlhol">Espanhol
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" name="devweb" value="alemão">Alemão
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" name="devweb" value="italiano">Italiano
+                        </label>
+                    </li>
+                </ul>
+              
+                
+            </div>
+            <div class="conteudo__nivel__fluencia">
+               <label for="fluencia"><strong>Qual é o seu nível de fluência</strong></label>
+                
+                <select id="fluencia">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Básico</option>
+                    <option>Intermediario</option>
+                    <option>Avançado</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="perguntas">
+
+           
+            <div class="pergunta__idioma__titulo">
+                <label><strong>O quanto você domina o idioma? </strong></label><br><br>
+            </div>
+
+            <ul class="pergunta__conteudo__lista">
+                
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="fala1" name="fala1" value="Fala">
+                    <label for="fala">Consegue falar, mas com dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="fala2" name="fala2" value="fala2">
+                    <label for="fala2">Consegue falar sem dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="ouve1" name="ouve1" value="ouve1">
+                    <label for="ouve1">Consegue ouvir, mas com dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="ouve2" name="ouve2" value="ouve2">
+                    <label for="ouve2">Consegue ouvir sem dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="escreve1" name="escreve1" value="esvreve1">
+                    <label for="escreve1">Consegue escrever, mas com dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="escreve2" name="escreve2" value="escreve2">
+                    <label for="escreve2">Consegue escrever sem dificuldade</label>
+                </li>
+
+                <li class="pergunta__conteudo__lista-item">
+                    <input type="checkbox" id="nenhuma" name="nenhuma" value="nenhuma">
+                    <label for="nenhunma">Nenhuma das opções</label>
+                </li>
+            </ul>   
+        </fieldset>
+
+        <div class="pergunta__campo__input">
+            <lebel><strong>Conte um pouco de como está sendo o seu aprendizado</strong></lebel>
+        </div>
+
+        <div class="campo__input">
+            <textarea wow="6" style="width: 20em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <div class="botao">
+            <button class="botao" type="submit">Enviar</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
